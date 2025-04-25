@@ -13,4 +13,4 @@ Route::get('/admin/search-contacts', [AdminController::class, 'searchContacts'])
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('/contact', [ContactFormController::class, 'store'])->name('contact.store');
+Route::post('/contact', [ContactFormController::class, 'store'])->middleware('throttle:10,1')->name('contact.store');
