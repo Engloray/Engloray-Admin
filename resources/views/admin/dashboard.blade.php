@@ -6,6 +6,7 @@
     <title>Admin Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="{{ asset('assets/EnglorayFavicon.jpg')}}" type="image/png">
 </head>
 <body class="bg-gray-100 min-h-screen">
 
